@@ -1,0 +1,54 @@
+.switch{
+  visibility: hidden;
+  display: none;
+}
+
+.check{
+  display: block;
+  position: relative;
+  height: 30px;
+  width: 55px;
+  background-color: #092c3E;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: ease-in 1s;
+}
+
+.switch:checked ~ .check{
+  background-color: #fff;
+  box-shadow: 0 0 0 1800px #092c3E;
+}
+
+.check::before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 100%;
+  transition-duration: 1s;
+}
+
+.switch:checked ~ .check:before{
+  transform: translateX(-50px);
+}
+
+
+.check::after{
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #092c3E;
+  border-radius: 100%;
+  transform: translateX(55px);
+  transition-duration: 1s;
+}
+
+.switch:checked ~ .check:after{
+  transform: translateX(0);
+}
