@@ -10,9 +10,6 @@ body {
   background-position: 100% 0, 0 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -42,6 +39,8 @@ hr{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+  padding:3rem 0;
+
 }
 
 /* Toggle Switch */
@@ -120,15 +119,41 @@ hr{
   display: flex;
   justify-content: center;
   align-items:center;
+  height: 487.2px;
+}
+
+.card-holder{
+  width: 22rem;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.middle-card{
+  transition-delay: 0.5s;
+}
+
+.bottom-card{
+  transition-delay: 1s;
 }
 
 .card {
+  position: absolute;
   text-align: center;
-  border: 1px solid;
-  width:18rem;
+  width: 18rem;
   border-radius: 12px;
   border: none;
   transition-duration: 1s;
+  backface-visibility: hidden;
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+.flip{
+  transform: rotateY(180deg);
 }
 
 .card p{
@@ -148,26 +173,13 @@ hr{
   color: hsl(233, 13%, 49%);
 }
 
-.flip{
-  transform: rotateY(180deg);
+.front{
 
 }
-
-.flip-x{
-  transform: scaleX(-1);
-}
-
-
-
-
-
-.hidden {
-  display: none;
-}
-
 .top, .bottom{
 	background-color: #fff;
   padding: 2rem;
+  top:1.5rem;
 
 }
 
