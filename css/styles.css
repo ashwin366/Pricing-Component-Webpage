@@ -250,6 +250,10 @@ hr{
     flex-direction: column;
     height:1461.6px;
   }
+	
+  .card{
+    border-radius: 12px;
+}
 
   .middle{
     padding: 2rem;
@@ -263,7 +267,6 @@ hr{
   }
 
   .card{
-    border-radius: 12px;
     width:80%;
   }
 }
