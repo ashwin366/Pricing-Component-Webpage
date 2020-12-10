@@ -216,10 +216,13 @@ hr {
   transition: 0.2s;
 }
 
-.btn:active {
+.btn:hover {
   color: hsl(237, 63%, 64%);
   background: none;
   border: 1px solid hsl(232, 13%, 33%);
+}
+
+.btn:active {
   transform: scale(0.95);
 }
 
@@ -228,10 +231,13 @@ hr {
   color: hsl(237, 63%, 64%);
 }
 
-.middle-button:active {
+.middle-button:hover {
   color: #fff;
   background: none;
   border: 1px solid #fff;
+}
+
+.middle-btn:active {
   transform: scale(0.95);
 }
 
