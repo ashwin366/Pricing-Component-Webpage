@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -13,73 +13,70 @@ body {
   min-height: 100vh;
 }
 
-h1{
+h1 {
   font-size: 4.3rem;
-	font-weight: 700;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1.2rem 0;
 }
 
-h2{
+h2 {
   color: hsl(233, 13%, 49%);
   font-size: 2rem;
 }
 
-
-hr{
+hr {
   border: none;
   border-top: 1px solid hsl(234, 14%, 74%);
 }
 
-
-.main-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  padding:3rem 0;
-
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
 }
 
 /* Toggle Switch */
-.toggle-section{
-	display: flex;
+.toggle-section {
+  display: flex;
   align-items: center;
-  margin:3rem 0 4rem;
+  margin: 3rem 0 4rem;
 }
 
-.toggle-section p{
+.toggle-section p {
   color: hsl(234, 14%, 74%);
   font-weight: 700;
   margin: 0;
 }
 
-.switch{
+.switch {
   visibility: hidden;
   display: none;
-
 }
 
-.check{
-	margin:0 1.5rem;
+.check {
+  margin: 0 1.5rem;
   cursor: pointer;
   display: block;
   position: relative;
   height: 30px;
   width: 55px;
-  background: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   border-radius: 30px;
   overflow: hidden;
   transition: ease-in 0.3s;
 }
 
-.check:hover{
+.check:hover {
   background: hsl(236, 72%, 79%);
 }
 
-.check::before{
+.check::before {
   content: "";
   position: absolute;
   top: 3px;
@@ -91,12 +88,11 @@ hr{
   transition-duration: 1s;
 }
 
-.switch:checked ~ .check:before{
+.switch:checked~.check:before {
   transform: translateX(-50px);
 }
 
-
-.check::after{
+.check::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -109,32 +105,31 @@ hr{
   transition-duration: 1s;
 }
 
-.switch:checked ~ .check:after{
+.switch:checked~.check:after {
   transform: translateX(0);
 }
 
-
-
+/* Card Container */
 .card-container {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   height: 487.2px;
 }
 
-.card-holder{
+.card-holder {
   width: 22rem;
   height: inherit;
   position: relative;
   transform-style: preserve-3d;
-  transition: 1s;
+  transition-duration: 1s;
 }
 
-.middle-card{
+.middle-card {
   transition-delay: 0.5s;
 }
 
-.bottom-card{
+.bottom-card {
   transition-delay: 1s;
 }
 
@@ -148,64 +143,59 @@ hr{
   backface-visibility: hidden;
 }
 
-.back{
+.back {
   transform: rotateY(180deg);
 }
 
-.flip{
+.flip {
   transform: rotateY(180deg);
 }
 
-.card p{
+.card p {
   margin: 1rem 0;
   font-weight: 700;
 }
 
-.top p,.bottom p{
+.top p, .bottom p {
   color: hsl(233, 13%, 49%);
 }
 
-.top h1,.bottom h1{
+.top h1, .bottom h1 {
   color: hsl(232, 13%, 33%);
 }
 
-.top h3,.bottom h3{
+.top h3, .bottom h3 {
   color: hsl(233, 13%, 49%);
 }
 
-.front{
-
-}
-.top, .bottom{
-	background-color: #fff;
+.top, .bottom {
+  background-color: #fff;
   padding: 2rem;
-  top:1.5rem;
-
+  top: 1.5rem;
 }
 
-.top{
-  border-radius:  12px 0 0 12px;
-
+.top {
+  border-radius: 12px 0 0 12px;
 }
 
-.bottom{
+.bottom {
   border-radius: 0 12px 12px 0;
   transition-delay: 1s;
 }
 
-.middle{
-	color: hsl(240, 78%, 98%);
-	background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+.middle {
+  color: hsl(240, 78%, 98%);
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   padding: 3.5rem 2rem;
   transition-delay: 0.5s;
 }
 
-.dollar{
-	font-size: 2.5rem;
+.dollar {
+  font-size: 2.5rem;
   margin-right: 10px;
 }
 
-.btn{
+.btn {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
@@ -217,7 +207,7 @@ hr{
   letter-spacing: 1px;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   padding: 14px 20px 14px 20px;
-  width:100%;
+  width: 100%;
   text-decoration: none;
   font-weight: 700;
   margin-top: 2rem;
@@ -225,48 +215,48 @@ hr{
   transition: 0.2s;
 }
 
-.btn:active{
+.btn:active {
   color: hsl(237, 63%, 64%);
   background: none;
   border: 1px solid hsl(232, 13%, 33%);
   transform: scale(0.95);
 }
 
-
-.middle-button{
+.middle-button {
   background: #fff;
   color: hsl(237, 63%, 64%);
 }
 
-.middle-button:active{
+.middle-button:active {
   color: #fff;
   background: none;
   border: 1px solid #fff;
   transform: scale(0.95);
 }
 
-@media (max-width:1100px){
-  .card-container{
+/* Media Queries */
+@media (max-width:1100px) {
+  .card-container {
     flex-direction: column;
-    height:1461.6px;
+    height: 1461.6px;
   }
-	
-  .card{
-    border-radius: 12px;
-}
 
-  .middle{
+  .card {
+    border-radius: 12px;
+  }
+
+  .middle {
     padding: 2rem;
     top: 1.5rem;
   }
 }
 
-@media (max-width:400px){
-  .card-holder{
+@media (max-width:400px) {
+  .card-holder {
     width: 21rem;
   }
 
-  .card{
-    width:80%;
+  .card {
+    width: 80%;
   }
 }
